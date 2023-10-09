@@ -1,0 +1,15 @@
+(
+   
+ input wire [3:0] data_in,  // 4 data inputs
+    input wire [1:0] select,   // 2-bit select input
+    output wire y             // MUX output
+);
+
+assign y = (select == 2'b00) ? data_in[0] :
+           (select == 2'b01) ? data_in[1] :
+           (select == 2'b10) ? data_in[2] :
+           (select == 2'b11) ? data_in[3] :
+           1'b0; // Default output when select is invalid (optional));
+
+
+endmodule

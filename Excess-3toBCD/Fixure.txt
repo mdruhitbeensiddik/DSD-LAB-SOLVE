@@ -1,0 +1,96 @@
+initial begin
+		// test case -1 
+		w = 0;
+		x = 0;
+		y = 1;
+		z = 1;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		
+		// test case -1 
+		w = 0;
+		x = 1;
+		y = 0;
+		z = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		
+		// test case -2 
+		w = 0;
+		x = 1;
+		y = 0;
+		z = 1;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		
+		// test case -3 
+		w = 0;
+		x = 1;
+		y = 1;
+		z = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		
+		// test case -4 
+		w = 0;
+		x = 1;
+		y = 1;
+		z = 1;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		
+		// test case -5 
+		w = 1;
+		x = 0;
+		y = 0;
+		z = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		
+		// test case -6 
+		w = 1;
+		x = 0;
+		y = 0;
+		z = 1;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		
+		// test case -7 
+		w = 1;
+		x = 0;
+		y = 1;
+		z = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		
+		// test case -8 
+		w = 1;
+		x = 0;
+		y = 1;
+		z = 1;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		
+		// test case -9 
+		w = 1;
+		x = 1;
+		y = 0;
+		z = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+        
+		// Add stimulus here
+
+	end
+      
+endmodule

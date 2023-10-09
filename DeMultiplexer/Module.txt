@@ -1,0 +1,12 @@
+(
+    input wire [1:0] select,   // 2-bit select input
+    input wire d_in,           // Data input
+    output wire [3:0] y        // 4 demux outputs
+);
+
+assign y[0] = (select == 2'b00) ? d_in : 1'b0;
+assign y[1] = (select == 2'b01) ? d_in : 1'b0;
+assign y[2] = (select == 2'b10) ? d_in : 1'b0;
+assign y[3] = (select == 2'b11) ? d_in : 1'b0;
+
+endmodule
