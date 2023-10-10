@@ -1,0 +1,5 @@
+(
+    input a, b, bin, output d, bout);
+    assign d = a ^ b ^ bin;
+    assign bout = (~a & b) | (b & bin) | (~a & bin);
+endmodule
